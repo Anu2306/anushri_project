@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "58374864049",
+    "firebase_url": "https://enharmonic-318d4.firebaseio.com",
+    "project_id": "enharmonic-318d4",
+    "storage_bucket": "enharmonic-318d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58374864049:android:2e11b82f50ca3726",
+        "android_client_info": {
+          "package_name": "trainedge.enharmonic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58374864049-mmk2059du85oia3vdha6fn8lqn205m64.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "trainedge.enharmonic",
+            "certificate_hash": "d4ba87db79571bdc6d2d20175980488e68cd4f7a"
+          }
+        },
+        {
+          "client_id": "58374864049-2de56pur8fh5scabjn0sd7orqud005k6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeEBOkucqZXVe38JbFS1NlxE2GGenBBIQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58374864049-2de56pur8fh5scabjn0sd7orqud005k6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
