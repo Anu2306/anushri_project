@@ -1,5 +1,6 @@
 package trainedge.enharmonic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -44,6 +45,16 @@ public class BasicActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent goToNextActivity = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(goToNextActivity);
+
+            return true;
+        }
+
+        if (id == R.id.action_feedback) {
+            Intent goToNextActivity = new Intent(getApplicationContext(), FeedbackActivity.class);
+            startActivity(goToNextActivity);
+
             return true;
         }
 

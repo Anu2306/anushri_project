@@ -4,79 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="trainedge.enharmonic.SettingsActivity">
+    tools:context="trainedge.enharmonic.SettingsActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
 
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="56dp"
         android:background="?attr/colorPrimary"
         app:popupTheme="@style/AppTheme.PopupOverlay"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Default Email Address"
-        android:textSize="@dimen/fab_margin"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="77dp" />
-
-    <EditText
-        android:id="@+id/etDefEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_email_black_24dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Email Address"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="103dp" />
-
-    <TextView
+    <!--<TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_wifi_black_24dp"
         android:text="  Only Allow Downloading using WiFi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="163dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="When checked allow downloading in WiFi only"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="187dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_cloud_upload_black_24dp"
-        android:text="  Allow automatic Cloud Sync"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="213dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="When enabled sync data to cloud and device"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="237dp" />
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginLeft="7dp" />
 
     <Button
         android:id="@+id/btnClearSettings"
@@ -84,24 +41,23 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_clear_all_black_24dp"
         android:text="CLEAR SETTINGS"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="272dp" />
-
-    <Switch
-        android:id="@+id/switchCloudSyncOp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:checked="true"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="213dp" />
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="269dp" />
 
     <Switch
         android:id="@+id/switchWifiOp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:checked="true"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="163dp" />
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginRight="16dp" />
 
-
+    -->
 </android.support.constraint.ConstraintLayout>
