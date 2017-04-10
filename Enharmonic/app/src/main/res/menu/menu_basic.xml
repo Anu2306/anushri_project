@@ -13,4 +13,10 @@
         android:orderInCategory="100"
         android:title="Feedback"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_invite"
+        android:orderInCategory="100"
+        android:title="Invite Contacts"
+        app:showAsAction="never" />
 </menu>
