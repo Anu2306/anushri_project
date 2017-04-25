@@ -9,4 +9,16 @@
     <string name="facebook_app_id">1269272553169471</string>
 
     <string name="fb_login_protocol_scheme">fb1269272553169471</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+
+
+
+    <string name="copy_right">Copyrights © %1$d</string>
 </resources>
