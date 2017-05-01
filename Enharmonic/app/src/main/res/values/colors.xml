@@ -4,5 +4,24 @@
     <color name="colorPrimaryDark">#305c9f</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!-- Screens background -->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#00bcd4</color>
+    <color name="bg_screen3">#3395ff</color>
+
+    <!-- dots active colors -->
+    <color name="dot_active">#f98da5</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#000</color>
+
+
+
+    <color name="clickColor">#d2d2d2</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
     <color name="black_overlay">#66000000</color>
 </resources>
