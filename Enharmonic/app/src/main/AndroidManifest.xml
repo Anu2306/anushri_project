@@ -59,7 +59,20 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AboutUsActivity"></activity>
+        <activity android:name=".AboutUsActivity" />
+        <activity
+            android:name=".Account_Setting"
+            android:label="@string/title_activity_account__setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MusicActivity" />
+        <activity
+            android:name=".GameOptionActivity"
+            android:label="@string/title_activity_game_option"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SliderActivity"
+            android:label="@string/title_activity_slider"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

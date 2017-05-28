@@ -1,6 +1,7 @@
 package trainedge.enharmonic;
 
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,22 +16,23 @@ import java.io.IOException;
 
 public class SongPlayerActivity extends AppCompatActivity {
 
+    private int position;
+    private Uri songUri;
+    private String path;
     private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_position);
+        //setContentView(R.layout.activity_position);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         Intent recIntent = getIntent();
 
-        mediaPlayer = new MediaPlayer();
-
-        int position=recIntent.getIntExtra("trainedge.enharmonic.position",0);
-        String path = recIntent.getExtras().getString("trainedge.enharmonic.path");
-        Uri songUri= recIntent.getExtras().getParcelable("trainedge.enharmonic.uri");
+        position = recIntent.getIntExtra("trainedge.beattiles.position", 0);
+        path = recIntent.getExtras().getString("trainedge.beattiles.path");
+        songUri = recIntent.getExtras().getParcelable("trainedge.beattiles.uri");
         try {
             handleSongPlay();
         } catch (IOException e) {
@@ -41,8 +43,29 @@ public class SongPlayerActivity extends AppCompatActivity {
 
     private void handleSongPlay() throws IOException {
 
-        mediaPlayer.start();
-        mediaPlayer.prepare();
 
+        mediaPlayer = new MediaPlayer();
+        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        mediaPlayer.setDataSource(getApplicationContext(), songUri);
+        mediaPlayer.prepare();
+        mediaPlayer.start();
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        try {
+
+            if (mediaPlayer != null) {
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                }
+                mediaPlayer.release();
+            }
+        } catch (Exception e) {
+
+        }
+        finish();
     }
 }

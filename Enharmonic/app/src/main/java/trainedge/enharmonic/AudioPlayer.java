@@ -5,6 +5,7 @@ import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.util.Log;
 
+import be.tarsos.dsp.AudioEvent;
 import be.tarsos.dsp.AudioProcessor;
 import be.tarsos.dsp.io.TarsosDSPAudioFormat;
 
@@ -59,6 +60,8 @@ public class AudioPlayer {
         /**
          * {@inheritDoc}
          */
+
+
         @Override
         public boolean process(AudioEvent audioEvent) {
             int overlapInSamples = audioEvent.getOverlap();

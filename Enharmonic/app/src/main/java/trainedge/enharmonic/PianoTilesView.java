@@ -19,6 +19,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+import trainedge.enharmonic.element.Block;
+import trainedge.enharmonic.element.Score;
+import trainedge.enharmonic.utils.DensityUtil;
+
 /**
  * Created by Anushri on 01-05-2017.
  */

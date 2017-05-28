@@ -101,7 +101,4 @@ public class BasicActivity extends AppCompatActivity{
 
 
     }
-
-
-
 }

@@ -1,5 +1,6 @@
 package trainedge.enharmonic;
 
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.appinvite.AppInvite;
 import com.google.android.gms.appinvite.AppInviteInvitation;
@@ -18,7 +20,14 @@ import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-public class HomeActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
+public class HomeActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener,View.OnClickListener {
+
+    //public static final String TAG = "MusicRetriever";
+    private Button ngamebtn;
+    private ContentResolver mContentResolver;
+    private ContentResolver cr;
+    private Button highscorebtn;
+
 
     public static final int REQUEST_INVITE =232;
     private GoogleApiClient mGoogleApiClient;
@@ -32,6 +41,13 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        ngamebtn = (Button) findViewById(R.id.ngamebtn);
+        ngamebtn.setOnClickListener(this);
+
+        highscorebtn = (Button) findViewById(R.id.highscorebtn);
+        highscorebtn.setOnClickListener(this);
+
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, this)
@@ -135,5 +151,23 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
         if (mGoogleApiClient!=null && mGoogleApiClient.isConnected()) {
             mGoogleApiClient.disconnect();
         }
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        if (v.getId() == R.id.ngamebtn)
+        {
+
+            Intent musicintent=new Intent(HomeActivity.this,MusicActivity.class);
+            startActivity(musicintent);
+
+        }
+        if(v.getId()==R.id.highscorebtn)
+        {
+            Intent scoreintent=new Intent(HomeActivity.this,ScoreActivity.class);
+            startActivity(scoreintent);
+        }
+
     }
 }

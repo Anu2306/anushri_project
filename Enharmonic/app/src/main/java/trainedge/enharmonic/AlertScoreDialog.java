@@ -29,10 +29,11 @@ public class AlertScoreDialog extends Dialog {
         super(context, themeResId);
 
 
-        mRootView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_score,null);
+       /* mRootView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_score,null);
         tv_score = (TextView) mRootView.findViewById(R.id.tv_score);
         btn_finish = (Button) mRootView.findViewById(R.id.dialog_btn_finish);
         btn_restart = (Button) mRootView.findViewById(R.id.dialog_btn_restart);
+    */
     }
 
     @Override

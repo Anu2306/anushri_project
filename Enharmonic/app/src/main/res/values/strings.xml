@@ -36,4 +36,7 @@
     <string name="desc_slide3">Click On White Tiles To Earn The Score</string>
 
     <string name="copy_right">Copyrights © %1$d</string>
+    <string name="title_activity_account__setting">Account_Setting</string>
+    <string name="title_activity_game_option">GameOptionActivity</string>
+    <string name="title_activity_slider">SliderActivity</string>
 </resources>
